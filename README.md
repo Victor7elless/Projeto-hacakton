@@ -78,7 +78,7 @@ sistema-documentos/
 │   │   ├── main.tsx       # Ponto de entrada React
 │   │   └── index.css      # Estilos globais e Tailwind
 │   └── index.html         # HTML principal
-├── server/                 # Backend (Express) - compatibilidade
+
 ├── package.json           # Dependências do projeto
 └── README.md             # Este arquivo
 ```
@@ -154,11 +154,19 @@ O sistema inclui dados de exemplo pré-carregados:
 
 ## 🚀 Deploy
 
-Para fazer deploy em produção:
+### Vercel (Recomendado)
+
+1. Faça push do repositório para GitHub
+2. Acesse Vercel e conecte seu repositório
+3. Configure Build Command: `npm run build`
+4. Configure Output Directory: `dist/public`
+5. Clique em Deploy
+
+### Produção Local
 
 1. Execute `pnpm build`
-2. O arquivo gerado estará em `dist/`
-3. Faça upload para seu servidor web (Vercel, Netlify, etc.)
+2. O arquivo gerado estará em `dist/public`
+3. Faça upload para seu servidor web
 
 ## 📞 Suporte
 
@@ -174,4 +182,3 @@ Projeto desenvolvido para fins educacionais.
 ---
 
 **Desenvolvido com ❤️ usando React + Tailwind CSS**
-# Projeto-hacakton
